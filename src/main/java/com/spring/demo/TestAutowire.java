@@ -8,10 +8,10 @@ public class TestAutowire {
 	  ApplicationContext context =
                 new ClassPathXmlApplicationContext(new String[] {"application-context.xml"});
          
-      EmployeeBean employee = (EmployeeBean) context.getBean ("employee");
-
+//      EmployeeBean employee = (EmployeeBean) context.getBean ("employee");
+	  EmployeeBean employee = (EmployeeBean) context.getBean (EmployeeBean.class);
       System.out.println(employee.getFullName());
 
-      System.out.println(employee.getDepartmentBean().getName());
+      System.out.println(employee.getDepartmentBean());
 	}
 }

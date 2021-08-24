@@ -12,7 +12,7 @@
 		<property name="fullName" value="Alisha Dias" />
 	</bean>
 
-	<bean id="departmentBean" class="com.spring.demo.DepartmentBean">
+	<bean id="departmentBean1" class="com.spring.demo.DepartmentBean">
 		<property name="name" value="Human Resource" />
 	</bean>
 </beans>
